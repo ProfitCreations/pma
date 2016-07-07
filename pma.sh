@@ -10,7 +10,7 @@ rm phpmyadmin.tar.gz
 CMD=vendor/laravel/homestead/scripts/serve-laravel.sh
 if [ ! -f $CMD ]; then
     # fallback for older versions
-    CMD=vendor/laravel/homestead/scripts/serve.sh
+    CMD=vendor/laravel/homestead/scripts/serve-laravel.sh
 fi
 
 sudo bash $CMD phpmyadmin.app $(pwd)/phpmyadmin
